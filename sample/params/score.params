@@ -5,3 +5,6 @@ scoringOutput: %sampleRoot%/sample/scoringObserverLogs
 systemOutput: %sampleRoot%/sample/sampleOutputStoreFiltered
 answerKey: %sampleRoot%/sample/sampleFinishedAnnotationStore
 neutralizeRealis: false
+documentsToScore: %sampleRoot%/sample/documentsToScore.txt
+referenceLinking: %sampleRoot%/sample/sampleLinkingStore
+scoringOutputDir: %sampleRoot%/sample/sampleScoringOutput

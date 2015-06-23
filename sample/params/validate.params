@@ -5,3 +5,4 @@ docIDMap: %sampleRoot%/sample/docIdToOriginalText.txt
 validRoles: %sampleRoot%/data/2014.types.txt
 alwaysValidRoles: Time,Place
 dump: true
+fileFormat: KBP2015

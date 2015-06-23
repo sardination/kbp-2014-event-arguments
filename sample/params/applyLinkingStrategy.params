@@ -1,0 +1,4 @@
+INCLUDE root.params
+
+argumentSystemStore: %sampleRoot%/sample/sampleOutputStoreFiltered/arguments
+linkingSystemStore: %sampleRoot%/sample/sampleOutputStoreFiltered/linking
