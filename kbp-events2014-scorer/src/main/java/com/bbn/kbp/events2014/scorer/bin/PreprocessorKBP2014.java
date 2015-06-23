@@ -85,7 +85,7 @@ public final class PreprocessorKBP2014 implements Preprocessor {
     // and (BasketballGame, Winner, The Cards, Actual) if the annotator had coreffed
     // "Louisville" and "The Cards"
     final Function<KBPString, KBPString> entityNormalizer =
-        answerKey.corefAnnotation().strictCASNormalizerFunction();
+        answerKey.corefAnnotation().laxCASNormalizerFunction(); //strict to lax
 
     // hard-coding the following two in is an ugly hack. Eventually they should get refactored
     // into a collection of filters built from each answer answerKey.

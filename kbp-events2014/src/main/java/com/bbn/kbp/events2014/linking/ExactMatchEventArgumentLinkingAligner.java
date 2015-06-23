@@ -46,7 +46,7 @@ public class ExactMatchEventArgumentLinkingAligner implements EventArgumentLinki
     final ImmutableMultimap<TypeRoleFillerRealis, Response> canonicalToResponses =
         Multimaps.index(responseLinking.allResponses(),
             TypeRoleFillerRealis.extractFromSystemResponse(
-                answerKey.corefAnnotation().strictCASNormalizerFunction()));
+                answerKey.corefAnnotation().laxCASNormalizerFunction())); //strict to lax
 
     final Multimap<Response, TypeRoleFillerRealis> responsesToCanonical =
         canonicalToResponses.inverse();
@@ -83,7 +83,7 @@ public class ExactMatchEventArgumentLinkingAligner implements EventArgumentLinki
     final ImmutableMultimap<TypeRoleFillerRealis, Response> canonicalToResponses =
         Multimaps.index(answerKey.allResponses(),
             TypeRoleFillerRealis.extractFromSystemResponse(
-                answerKey.corefAnnotation().strictCASNormalizerFunction()));
+                answerKey.corefAnnotation().laxCASNormalizerFunction())); //strict to lax
 
     final ImmutableSet.Builder<Response> incompletes = ImmutableSet.builder();
     for (final TypeRoleFillerRealis incompleteEquivClass : eventArgumentLinking.incomplete()) {

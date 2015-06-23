@@ -78,7 +78,7 @@ public final class EventArgumentLinking {
   public static EventArgumentLinking createMinimalLinkingFrom(AnswerKey answerKey) {
     final Function<Response, TypeRoleFillerRealis> ToEquivalenceClass =
         TypeRoleFillerRealis.extractFromSystemResponse(
-            answerKey.corefAnnotation().strictCASNormalizerFunction());
+            answerKey.corefAnnotation().laxCASNormalizerFunction()); //strict to lax
 
     log.info("creating minimal linking for {} responses", answerKey.annotatedResponses().size());
 

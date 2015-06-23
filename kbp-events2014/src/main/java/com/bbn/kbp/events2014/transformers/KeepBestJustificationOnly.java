@@ -80,6 +80,6 @@ public final class KeepBestJustificationOnly implements Function<SystemOutput, S
 
   public static KeepBestJustificationOnly createForCorefAnnotation(
       CorefAnnotation corefAnnotation) {
-    return new KeepBestJustificationOnly(corefAnnotation.strictCASNormalizerFunction());
+    return new KeepBestJustificationOnly(corefAnnotation.laxCASNormalizerFunction()); //strict to lax
   }
 }
