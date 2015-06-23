@@ -3,3 +3,4 @@ sampleAnnotationStore
 scoringObserverLogs
 sampleOutputStoreFiltered
 quoteFilter.filter
+.DS_Store
